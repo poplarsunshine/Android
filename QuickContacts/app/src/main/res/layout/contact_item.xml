@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <!--android:src="@drawable/ic_launcher"-->
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="false" />
+
+    <TextView
+        android:layout_width="500dp"
+        android:layout_height="30dp"
+        android:text="New Text"
+        android:id="@+id/textView_name"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_alignParentLeft="false"
+        android:layout_toLeftOf="@+id/del"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@android:color/black"
+        android:gravity="center_vertical"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="450dp"
+        android:layout_height="30dp"
+        android:text="New Text"
+        android:id="@+id/textView_num"
+        android:layout_alignParentLeft="false"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:layout_toLeftOf="@+id/del"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/darker_gray" />
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/del"
+        android:text="╳"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:background="#00ffff00" />
+</RelativeLayout>
